@@ -14,7 +14,7 @@ Next, I built the login function.
     - If the username was not found in the file:
       - Display the statement "Username does not exist. Please create an account"
 
-Then I design up the sign up function.
+Then I design the sign up function.
   - Needed to take 2 inputs, newName and newPassword
   - Ask the user to input their username
   - Check to see if the username already exists in the Credentials.txt file
@@ -24,5 +24,16 @@ Then I design up the sign up function.
       - The user is prompted to create a password for their account
       - Then the username and password are appended into the Credentials.txt file
       - Display the statement "Account created successfully" once appropriate credentials have been entered
+      
+Lastly, I set up the main program.
+  - Started by having a prompt for the user to enter either 1 to Login, 2 to Create an Account, or 3 to Exit
+  - If the user enters 1:
+    - the login function runs and the user is prompted to enter their username and password
+      - If the username is not found in the Credentials.txt file, then the user is asked to create an account using the sign up function
+  - If the user enters 2:
+    - the sign up function is run and a new account is created
+  - If the user enters 3:
+    - The form is exitted and no action is preformed
+  - If the user enters anything other than 1, 2, or 3:
+    - An Invalid Input statement is displayed and the user is prompted to enter a valid input
 
-  
